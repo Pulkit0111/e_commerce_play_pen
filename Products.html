@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <style>
+        #pro_form{
+            width: 10%;
+        }
+        input{
+            margin-bottom: 5%;
+        }
+        img{
+            width: 60%;
+        }
+        #data{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            margin-left: 2%;
+            margin-right: 2%;
+            grid-gap: 2%;
+        }
+    </style>
+</head>
+<body>
+    <form id="pro_form">
+        <input type="text" id="name" placeholder="name">
+        <input type="number" id="price" placeholder="price">
+        <input type="text" id="image" placeholder="image-link">
+    </form>
+    <button onclick="addProducts()">Add Products</button>
+    <button onclick="showProducts()">Show Products</button>
+    <a href="./cart.html">
+        <button>Show Cart</button>
+    </a>
+    <div id="data"></div>
+</body>
+</html>
+<script src="script.js"></script>

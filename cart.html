@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART</title>
+    <style>
+        img{
+            width: 60%;
+        }
+        #data{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            margin-left: 2%;
+            margin-right: 2%;
+            grid-gap: 2%;
+        }
+        #items{
+            font-size: 20px;
+            text-align: center;
+            margin: 5%;
+            font-weight: bold;
+        }
+        #dis_div{
+            text-align: center;
+        }
+        .dis_p{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="data"></div>
+    <div id=items></div>
+    <div id="dis_div">
+        <input type="text" id="discount" placeholder="Promo Code if Any...">
+        <button onclick="promo()">Promo Code</button>
+    </div>
+    <a href="./success.html"><button class="check">Check Out</button></a>
+</body>
+</html>
+<script src="./cart_script.js"></script>
